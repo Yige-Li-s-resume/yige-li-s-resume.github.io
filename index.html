@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RasK | Multimodal Learning & Efficient AI</title>
-  <meta name="description" content="Personal academic homepage of RasK, focusing on multimodal learning, knowledge distillation, and efficient AI." />
+  <title>李奕阁 | Multimodal Learning & Efficient AI</title>
+  <meta name="description" content="Personal academic homepage of 李奕阁, focusing on multimodal learning, knowledge distillation, and efficient AI." />
 
   <style>
     :root {
@@ -144,7 +144,7 @@
     h1 {
       font-size: clamp(38px, 6vw, 64px);
       line-height: 1.05;
-      letter-spacing: -0.055em;
+      letter-spacing: -0.025em;
       margin-bottom: 20px;
     }
 
@@ -214,26 +214,33 @@
       margin-bottom: 18px;
     }
 
-    .profile-card h2 {
-      font-size: 22px;
-      margin-bottom: 6px;
-    }
-
     .profile-card p {
       color: var(--muted);
       font-size: 15px;
     }
 
-    .socials {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
+    .profile-info {
+      display: grid;
+      gap: 10px;
       margin-top: 18px;
+      font-size: 14px;
     }
 
-    .socials a {
-      font-size: 14px;
+    .profile-info div {
+      display: grid;
+      gap: 2px;
+    }
+
+    .profile-info strong {
+      color: var(--text);
+      font-size: 13px;
+    }
+
+    .profile-info span,
+    .profile-info a {
+      color: var(--primary);
       font-weight: 700;
+      overflow-wrap: anywhere;
     }
 
     section {
@@ -310,6 +317,26 @@
       border-radius: 18px;
     }
 
+    .nested-experience {
+      margin-top: 18px;
+      margin-left: 28px;
+      padding-left: 18px;
+      border-left: 3px solid var(--line);
+    }
+
+    .nested-experience h4 {
+      font-size: 16px;
+      margin-bottom: 6px;
+      color: var(--text);
+      letter-spacing: -0.01em;
+    }
+
+    .nested-experience p {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
     .time {
       color: var(--primary);
       font-weight: 800;
@@ -354,7 +381,8 @@
       justify-items: start;
     }
 
-    .contact-links a {
+    .contact-links a,
+    .contact-links span {
       color: #93c5fd;
       font-weight: 700;
     }
@@ -397,10 +425,11 @@
   <header>
     <div class="container">
       <nav>
-        <a class="logo" href="#top">RasK</a>
+        <a class="logo" href="#top">李奕阁</a>
         <div class="nav-actions">
           <div class="nav-links">
             <a href="#about" data-en="About" data-zh="关于我">About</a>
+            <a href="#experience" data-en="Experience" data-zh="经历">Experience</a>
             <a href="#research" data-en="Research" data-zh="研究方向">Research</a>
             <a href="#projects" data-en="Projects" data-zh="项目经历">Projects</a>
             <a href="#publications" data-en="Publications" data-zh="论文成果">Publications</a>
@@ -418,7 +447,7 @@
       <div class="container hero-grid">
         <div>
           <div class="eyebrow" data-en="Multimodal Learning · Knowledge Distillation · Efficient AI" data-zh="多模态学习 · 知识蒸馏 · 高效人工智能">Multimodal Learning · Knowledge Distillation · Efficient AI</div>
-          <h1>RasK</h1>
+          <h1>李奕阁</h1>
           <p class="subtitle" data-en="I am interested in multimodal learning, knowledge distillation, and efficient model adaptation, with a focus on building practical, scalable, and research-driven AI systems." data-zh="我主要关注多模态学习、知识蒸馏与高效模型适配，目标是构建实用、可扩展且由研究驱动的人工智能系统。">
             I am interested in multimodal learning, knowledge distillation, and efficient model adaptation,
             with a focus on building practical, scalable, and research-driven AI systems.
@@ -431,14 +460,17 @@
         </div>
 
         <aside class="profile-card">
-          <div class="avatar">R</div>
-          <h2>RasK</h2>
+          <div class="avatar">李</div>
           <p data-en="Prospective PhD applicant in multimodal AI and algorithm engineering." data-zh="多模态人工智能与算法工程方向的博士申请者。">Prospective PhD applicant in multimodal AI and algorithm engineering.</p>
-          <div class="socials">
-            <a href="mailto:your.email@example.com">Email</a>
-            <a href="https://github.com/your-github-username" target="_blank">GitHub</a>
-            <a href="https://scholar.google.com/" target="_blank">Google Scholar</a>
-            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+          <div class="profile-info">
+            <div>
+              <strong>Email</strong>
+              <span>yige.li43@gmail.com</span>
+            </div>
+            <div>
+              <strong>GitHub</strong>
+              <a href="https://github.com/wwoww1?tab=repositories" target="_blank">github.com/wwoww1</a>
+            </div>
           </div>
         </aside>
       </div>
@@ -477,40 +509,67 @@
       </div>
     </section>
 
+    <section id="experience">
+      <div class="container">
+        <h2 class="section-title" data-en="Education & Experience" data-zh="教育与经历">Education & Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="time" data-en="2019 - 2023" data-zh="2019 - 2023">2019 - 2023</div>
+            <div>
+              <h3 data-en="B.S., Northwestern Polytechnical University" data-zh="本科，西北工业大学">B.S., Northwestern Polytechnical University</h3>
+              <p data-en="Completed undergraduate study at Northwestern Polytechnical University, building a systematic foundation in engineering, programming, mathematics, and algorithmic problem solving." data-zh="于西北工业大学完成本科阶段学习，系统建立工程基础、程序设计、数学基础与算法问题求解能力。">
+                Completed undergraduate study at Northwestern Polytechnical University, building a systematic foundation in engineering, programming, mathematics, and algorithmic problem solving.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="time" data-en="2023 - 2026" data-zh="2023 - 2026">2023 - 2026</div>
+            <div>
+              <h3 data-en="M.S., Northwestern Polytechnical University" data-zh="硕士，西北工业大学">M.S., Northwestern Polytechnical University</h3>
+              <p data-en="Continued master's study at Northwestern Polytechnical University, with research and engineering interests gradually focusing on machine learning, multimodal AI, efficient model adaptation, and algorithm implementation." data-zh="继续在西北工业大学攻读硕士学位，研究与工程兴趣逐步聚焦于机器学习、多模态人工智能、高效模型适配与算法实现。">
+                Continued master's study at Northwestern Polytechnical University, with research and engineering interests gradually focusing on machine learning, multimodal AI, efficient model adaptation, and algorithm implementation.
+              </p>
+              <div class="nested-experience">
+                <h4 data-en="Internship, Diantou Education" data-zh="点头教育实习经历">Internship, Diantou Education</h4>
+                <p data-en="Gained practical internship experience at Diantou Education during the master's period, strengthening the connection between technical learning, product-oriented thinking, and real-world application scenarios." data-zh="硕士期间曾在点头教育实习，进一步强化技术学习、产品化思维与真实业务应用场景之间的连接。">
+                  Gained practical internship experience at Diantou Education during the master's period, strengthening the connection between technical learning, product-oriented thinking, and real-world application scenarios.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="time" data-en="Current" data-zh="目前">Current</div>
+            <div>
+              <h3 data-en="Current Position, AVIC-Affiliated Subsidiary" data-zh="现就职于中国航空工业集团旗下某子公司">Current Position, AVIC-Affiliated Subsidiary</h3>
+              <p data-en="Currently working in a subsidiary affiliated with the Aviation Industry Corporation of China, engaging with industry-side engineering practice and applied technology development." data-zh="目前就职于中国航空工业集团旗下某子公司，参与面向产业场景的工程实践与应用技术工作。">
+                Currently working in a subsidiary affiliated with the Aviation Industry Corporation of China, engaging with industry-side engineering practice and applied technology development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="research">
       <div class="container">
-        <h2 class="section-title" data-en="Research" data-zh="研究方向">Research</h2>
-        <p class="section-desc" data-en="My research work currently centers on efficient representation transfer and multimodal model training." data-zh="我的研究工作目前主要围绕高效表征迁移与多模态模型训练展开。">My research work currently centers on efficient representation transfer and multimodal model training.</p>
+        <h2 class="section-title" data-en="Research" data-zh="研究成果">Research</h2>
 
         <div class="timeline">
           <div class="timeline-item">
-            <div class="time" data-en="2025 - Present" data-zh="2025 - 至今">2025 - Present</div>
+            <div class="time" data-en="ICONIP 2026" data-zh="ICONIP 2026">ICONIP 2026</div>
             <div>
-              <h3 data-en="Multi-Granularity Knowledge Distillation" data-zh="多粒度知识蒸馏">Multi-Granularity Knowledge Distillation</h3>
-              <p data-en="Developed a knowledge distillation framework combining local attention alignment, subspace-aware supervision, and global feature-geometry regularization for compact student models." data-zh="提出一种知识蒸馏框架，为轻量级学生模型提供局部注意力对齐、子空间感知监督和全局特征几何正则化。">
-                Developed a knowledge distillation framework combining local attention alignment, subspace-aware supervision,
-                and global feature-geometry regularization for compact student models.
-              </p>
+              <h3 data-en="Multi-Granularity Knowledge Distillation via Subspace-aware Representation" data-zh="Multi-Granularity Knowledge Distillation via Subspace-aware Representation">Multi-Granularity Knowledge Distillation via Subspace-aware Representation</h3>
+              <p data-en="Accepted by ICONIP 2026." data-zh="录用于 ICONIP 2026。">Accepted by ICONIP 2026.</p>
             </div>
           </div>
 
           <div class="timeline-item">
-            <div class="time" data-en="Recent" data-zh="近期">Recent</div>
+            <div class="time" data-en="ICONIP 2026" data-zh="ICONIP 2026">ICONIP 2026</div>
             <div>
-              <h3 data-en="Multimodal Learning and Image-Text Retrieval" data-zh="多模态学习与图文检索">Multimodal Learning and Image-Text Retrieval</h3>
-              <p data-en="Implemented image-text retrieval systems and studied representation alignment between visual and textual modalities." data-zh="实现图文检索系统，并研究视觉模态与文本模态之间的表征对齐。">
-                Implemented image-text retrieval systems and studied representation alignment between visual and textual modalities.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="time" data-en="Recent" data-zh="近期">Recent</div>
-            <div>
-              <h3 data-en="Efficient Fine-Tuning and Reasoning Data Construction" data-zh="高效微调与推理数据构造">Efficient Fine-Tuning and Reasoning Data Construction</h3>
-              <p data-en="Worked on LoRA fine-tuning, Chain-of-Thought data generation, correctness filtering, and structured reasoning tasks." data-zh="开展 LoRA 微调、思维链数据生成、正确性筛选和结构化推理任务相关工作。">
-                Worked on LoRA fine-tuning, Chain-of-Thought data generation, correctness filtering, and structured reasoning tasks.
-              </p>
+              <h3 data-en="VEC-DPO: Visual Evidence-Calibrated Preference Optimization for Mitigating Hallucination in Multimodal Large Language Models" data-zh="VEC-DPO: Visual Evidence-Calibrated Preference Optimization for Mitigating Hallucination in Multimodal Large Language Models">VEC-DPO: Visual Evidence-Calibrated Preference Optimization for Mitigating Hallucination in Multimodal Large Language Models</h3>
+              <p data-en="Accepted by ICONIP 2026." data-zh="录用于 ICONIP 2026。">Accepted by ICONIP 2026.</p>
             </div>
           </div>
         </div>
@@ -631,9 +690,8 @@
             </p>
           </div>
           <div class="contact-links">
-            <a href="mailto:your.email@example.com">your.email@example.com</a>
-            <a href="https://github.com/your-github-username" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            <span>yige.li43@gmail.com</span>
+            <a href="https://github.com/wwoww1?tab=repositories" target="_blank">GitHub</a>
           </div>
         </div>
       </div>
@@ -641,8 +699,8 @@
   </main>
 
   <footer>
-    <div class="container" data-en="© 2026 RasK. Last updated: May 2026." data-zh="© 2026 RasK. 最后更新：2026 年 5 月。">
-      © 2026 RasK. Last updated: May 2026.
+    <div class="container" data-en="© 2026 李奕阁. Last updated: May 2026." data-zh="© 2026 李奕阁. 最后更新：2026 年 5 月。">
+      © 2026 李奕阁. Last updated: May 2026.
     </div>
   </footer>
 

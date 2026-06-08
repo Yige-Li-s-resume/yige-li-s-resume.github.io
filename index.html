@@ -432,7 +432,6 @@
             <a href="#experience" data-en="Experience" data-zh="经历">Experience</a>
             <a href="#research" data-en="Research" data-zh="研究方向">Research</a>
             <a href="#projects" data-en="Projects" data-zh="项目经历">Projects</a>
-            <a href="#publications" data-en="Publications" data-zh="论文成果">Publications</a>
             <a href="#cv" data-en="CV" data-zh="简历">CV</a>
             <a href="#contact" data-en="Contact" data-zh="联系方式">Contact</a>
           </div>
@@ -454,7 +453,6 @@
           </p>
           <div class="button-row">
             <a class="btn primary" href="#projects" data-en="View Projects" data-zh="查看项目">View Projects</a>
-            <a class="btn" href="#publications" data-en="View Publications" data-zh="查看论文">View Publications</a>
             <a class="btn" href="./cv.pdf" target="_blank" data-en="Download CV" data-zh="下载简历">Download CV</a>
           </div>
         </div>
@@ -532,8 +530,8 @@
               </p>
               <div class="nested-experience">
                 <h4 data-en="Internship, Diantou Education" data-zh="点头教育实习经历">Internship, Diantou Education</h4>
-                <p data-en="Gained practical internship experience at Diantou Education during the master's period, strengthening the connection between technical learning, product-oriented thinking, and real-world application scenarios." data-zh="硕士期间曾在点头教育实习，进一步强化技术学习、产品化思维与真实业务应用场景之间的连接。">
-                  Gained practical internship experience at Diantou Education during the master's period, strengthening the connection between technical learning, product-oriented thinking, and real-world application scenarios.
+                <p data-en="During my master's period, I interned at Diantou Education, where I worked on medical image segmentation tasks, including medical image data processing, segmentation model training, and algorithm validation. This work also resulted in a <strong>patent</strong>." data-zh="硕士期间曾在点头教育实习，主要参与医疗影像分割相关工作，包括医学图像数据处理、分割模型训练与算法验证；该工作产出一项<strong>专利</strong>。">
+                  During my master's period, I interned at Diantou Education, where I worked on medical image segmentation tasks, including medical image data processing, segmentation model training, and algorithm validation. This work also resulted in a <strong>patent</strong>.
                 </p>
               </div>
             </div>
@@ -641,32 +639,6 @@
       </div>
     </section>
 
-    <section id="publications">
-      <div class="container">
-        <h2 class="section-title" data-en="Publications" data-zh="论文成果">Publications</h2>
-        <p class="section-desc" data-en="Replace the status and links below after the paper is accepted, published, or uploaded as a preprint." data-zh="论文接收、发表或上传预印本后，可以替换下面的状态和链接。">Replace the status and links below after the paper is accepted, published, or uploaded as a preprint.</p>
-
-        <div class="card paper">
-          <div class="paper-title">Multi-Granularity Knowledge Distillation via Subspace-aware Representation</div>
-          <div class="paper-meta" data-en="Manuscript / Conference Submission" data-zh="手稿 / 会议投稿">Manuscript / Conference Submission</div>
-          <p data-en="This work proposes a multi-granularity distillation framework that provides local, subspace-level, and global geometric supervision for efficient student models." data-zh="该工作提出一种多粒度蒸馏框架，为高效学生模型提供局部、子空间级和全局几何监督。">
-            This work proposes a multi-granularity distillation framework that provides local, subspace-level,
-            and global geometric supervision for efficient student models.
-          </p>
-          <div class="tags">
-            <span class="tag">Knowledge Distillation</span>
-            <span class="tag">Representation Learning</span>
-            <span class="tag">Efficient AI</span>
-          </div>
-          <p>
-            <a href="https://github.com/wwoww1/MGKD" target="_blank">Code</a>
-            · <a href="#">Paper PDF</a>
-            · <a href="#">BibTeX</a>
-          </p>
-        </div>
-      </div>
-    </section>
-
     <section id="cv">
       <div class="container">
         <h2 class="section-title" data-en="CV" data-zh="简历">CV</h2>
@@ -711,7 +683,7 @@
       document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
 
       document.querySelectorAll("[data-en][data-zh]").forEach((element) => {
-        element.textContent = element.dataset[language];
+        element.innerHTML = element.dataset[language];
       });
 
       const langToggle = document.getElementById("langToggle");

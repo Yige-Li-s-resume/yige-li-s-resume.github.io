@@ -200,13 +200,13 @@
 
     .hero-photo-wrap {
       justify-self: end;
-      width: min(320px, 100%);
+      width: min(250px, 100%);
     }
 
     .photo-frame {
       width: 100%;
       aspect-ratio: 3 / 4;
-      border-radius: 28px;
+      border-radius: 22px;
       overflow: hidden;
       border: 1px solid var(--line);
       background: #eef2f7;
@@ -302,6 +302,16 @@
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 20px;
+    }
+
+
+
+    #projects .grid {
+      grid-template-columns: 1fr;
+    }
+
+    #projects .card {
+      padding: 28px 30px;
     }
 
     .card {
@@ -454,7 +464,7 @@
 
       .hero-photo-wrap {
         justify-self: start;
-        width: min(260px, 72vw);
+        width: min(210px, 58vw);
       }
 
       .hero-contact {
@@ -503,6 +513,7 @@
 </div>
 <div class="button-row">
 <a class="btn primary" href="#projects">View Projects</a>
+<a class="btn" href="#research">View Research</a>
 <a class="btn" href="./cv.pdf" target="_blank">Download CV</a>
 </div>
 </div>
@@ -607,44 +618,14 @@
 <p class="section-desc">These projects highlight my experience in model training, multimodal learning, and efficient AI systems.</p>
 <div class="grid">
 <article class="card">
-<h3>MGKD: Multi-Granularity Knowledge Distillation</h3>
-<p>A distillation framework integrating 3D attention alignment, adversarial masking, and spherical feature regularization. Evaluated on CIFAR-100, STL-10, and TinyImageNet.</p>
-<div class="tags">
-<span class="tag">PyTorch</span>
-<span class="tag">Knowledge Distillation</span>
-<span class="tag">Model Compression</span>
-</div>
-<p><a href="https://github.com/wwoww1/MGKD" target="_blank">View Code →</a></p>
-</article>
-<article class="card">
 <h3>Image-Text Retrieval System</h3>
 <p>Built a multimodal retrieval pipeline for aligning images and text in a shared embedding space. The project covers dataset processing, model training, evaluation, and retrieval visualization.</p>
-<div class="tags">
-<span class="tag">CLIP-style Learning</span>
-<span class="tag">Retrieval</span>
-<span class="tag">Multimodal</span>
-</div>
-<p><a href="#">Add Project Link →</a></p>
+<p><a href="#">Code link will be added →</a></p>
 </article>
 <article class="card">
-<h3>Nemotron LoRA Fine-Tuning</h3>
-<p>Fine-tuned a large language model with LoRA using curated Chain-of-Thought data, correctness filtering, and competition-oriented training pipelines.</p>
-<div class="tags">
-<span class="tag">LoRA</span>
-<span class="tag">SFT</span>
-<span class="tag">CoT Data</span>
-</div>
-<p><a href="#">Add Project Link →</a></p>
-</article>
-<article class="card">
-<h3>LLaVA Training Code Study</h3>
-<p>Studied the training pipeline of LLaVA-style vision-language models, including tokenizer setup, vision tower initialization, multimodal projector training, dataset construction, and trainer logic.</p>
-<div class="tags">
-<span class="tag">LLaVA</span>
-<span class="tag">VLM</span>
-<span class="tag">Training Pipeline</span>
-</div>
-<p><a href="#">Add Notes Link →</a></p>
+<h3>Cross-Platform Multimodal Large Language Model Quantization and Deployment</h3>
+<p>A placeholder project for building a unified deployment pipeline for quantized multimodal large language models across desktop and mobile environments. Planned components include model quantization, inference acceleration, local deployment, and extensible model integration.</p>
+<p><a href="#">Code link will be added →</a></p>
 </article>
 </div>
 </div>

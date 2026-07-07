@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>李奕阁 | Multimodal Learning & Efficient AI</title>
-  <meta name="description" content="Personal academic homepage of 李奕阁, focusing on multimodal learning, knowledge distillation, and efficient AI." />
-
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yige Li | Multimodal Learning &amp; Efficient AI</title>
+<meta content="Personal academic homepage of Yige Li, focusing on multimodal learning, knowledge distillation, and efficient AI." name="description"/>
+<style>
     :root {
       --bg: #f7f8fa;
       --card: #ffffff;
@@ -99,34 +98,13 @@
       color: var(--primary);
       text-decoration: none;
     }
-
-    .lang-toggle {
-      border: 1px solid var(--line);
-      background: var(--card);
-      color: var(--text);
-      border-radius: 999px;
-      padding: 7px 13px;
-      font-weight: 800;
-      font-size: 13px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
-    }
-
-    .lang-toggle:hover {
-      background: var(--dark);
-      border-color: var(--dark);
-      color: #ffffff;
-      transform: translateY(-1px);
-    }
-
-    .hero {
+.hero {
       padding: 76px 0 56px;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.7fr 0.8fr;
+      grid-template-columns: 1.45fr 0.65fr;
       gap: 36px;
       align-items: center;
     }
@@ -190,6 +168,67 @@
       background: var(--card);
       color: var(--text);
       border-color: var(--line);
+    }
+
+    .hero-contact {
+      display: flex;
+      gap: 16px 22px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 22px;
+      font-size: 15px;
+    }
+
+    .hero-contact div {
+      display: inline-flex;
+      gap: 8px;
+      align-items: baseline;
+      white-space: nowrap;
+    }
+
+    .hero-contact .contact-label {
+      color: var(--text);
+      font-weight: 800;
+    }
+
+    .hero-contact span:not(.contact-label),
+    .hero-contact a {
+      color: var(--primary);
+      font-weight: 800;
+      overflow-wrap: anywhere;
+    }
+
+    .hero-photo-wrap {
+      justify-self: end;
+      width: min(320px, 100%);
+    }
+
+    .photo-frame {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      border-radius: 28px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: #eef2f7;
+      box-shadow: var(--shadow);
+    }
+
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .photo-placeholder {
+      display: none;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-weight: 800;
+      letter-spacing: -0.02em;
     }
 
     .profile-card {
@@ -413,6 +452,17 @@
         grid-template-columns: 1fr;
       }
 
+      .hero-photo-wrap {
+        justify-self: start;
+        width: min(260px, 72vw);
+      }
+
+      .hero-contact {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+      }
+
       .timeline-item {
         grid-template-columns: 1fr;
         gap: 8px;
@@ -420,284 +470,200 @@
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <div class="container">
-      <nav>
-        <a class="logo" href="#top">李奕阁</a>
-        <div class="nav-actions">
-          <div class="nav-links">
-            <a href="#about" data-en="About" data-zh="关于我">About</a>
-            <a href="#experience" data-en="Experience" data-zh="经历">Experience</a>
-            <a href="#research" data-en="Research" data-zh="研究方向">Research</a>
-            <a href="#projects" data-en="Projects" data-zh="项目经历">Projects</a>
-            <a href="#cv" data-en="CV" data-zh="简历">CV</a>
-            <a href="#contact" data-en="Contact" data-zh="联系方式">Contact</a>
-          </div>
-          <button class="lang-toggle" type="button" onclick="toggleLanguage()" id="langToggle">中文</button>
-        </div>
-      </nav>
-    </div>
-  </header>
+<header>
+<div class="container">
+<nav>
+<a class="logo" href="#top">Yige Li</a>
+<div class="nav-actions">
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#research">Research</a>
+<a href="#projects">Projects</a>
+<a href="#cv">CV</a>
+<a href="#contact">Contact</a>
+</div>
 
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <div class="eyebrow" data-en="Multimodal Learning · Knowledge Distillation · Efficient AI" data-zh="多模态学习 · 知识蒸馏 · 高效人工智能">Multimodal Learning · Knowledge Distillation · Efficient AI</div>
-          <h1>李奕阁</h1>
-          <p class="subtitle" data-en="I am interested in multimodal learning, knowledge distillation, and efficient model adaptation, with a focus on building practical, scalable, and research-driven AI systems." data-zh="我主要关注多模态学习、知识蒸馏与高效模型适配，目标是构建实用、可扩展且由研究驱动的人工智能系统。">
-            I am interested in multimodal learning, knowledge distillation, and efficient model adaptation,
-            with a focus on building practical, scalable, and research-driven AI systems.
-          </p>
-          <div class="button-row">
-            <a class="btn primary" href="#projects" data-en="View Projects" data-zh="查看项目">View Projects</a>
-            <a class="btn" href="./cv.pdf" target="_blank" data-en="Download CV" data-zh="下载简历">Download CV</a>
-          </div>
-        </div>
+</div>
+</nav>
+</div>
+</header>
+<main id="top">
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<div class="eyebrow">Multimodal Learning · Knowledge Distillation · Efficient AI</div>
+<h1>Yige Li</h1>
+<p class="subtitle">Prospective PhD applicant in multimodal AI and algorithm engineering, with interests in multimodal learning, knowledge distillation, and efficient model adaptation.</p>
+<div class="hero-contact" id="contact">
+<div><span class="contact-label">Email</span><span>yige.li43@gmail.com</span></div>
+<div><span class="contact-label">GitHub</span><a href="https://github.com/wwoww1?tab=repositories" target="_blank">github.com/wwoww1</a></div>
+<div><span class="contact-label">LinkedIn</span><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></div>
+</div>
+<div class="button-row">
+<a class="btn primary" href="#projects">View Projects</a>
+<a class="btn" href="./cv.pdf" target="_blank">Download CV</a>
+</div>
+</div>
+<aside class="hero-photo-wrap" aria-label="Profile photo">
+<div class="photo-frame">
+<img src="./profile.jpg" alt="Yige Li profile photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+<div class="photo-placeholder">Add profile.jpg</div>
+</div>
+</aside>
+</div>
+</section>
+<section id="about">
+<div class="container">
+<h2 class="section-title">About Me</h2>
+<p class="section-desc">I focus on machine learning systems that connect research ideas with deployable implementations. My current interests include multimodal representation learning, vision-language models, knowledge distillation, parameter-efficient fine-tuning, and reasoning data construction.</p>
+<div class="grid">
+<div class="card">
+<h3>Research Interests</h3>
+<p>Multimodal learning, image-text retrieval, vision-language models, knowledge distillation, efficient fine-tuning, and model compression.</p>
+<div class="tags">
+<span class="tag">Multimodal AI</span>
+<span class="tag">VLM</span>
+<span class="tag">KD</span>
+<span class="tag">LoRA</span>
+</div>
+</div>
+<div class="card">
+<h3>Current Goal</h3>
+<p>Building a stronger research and engineering portfolio for PhD applications and algorithm engineering roles.</p>
+<div class="tags">
+<span class="tag">PhD Application</span>
+<span class="tag">Research</span>
+<span class="tag">Engineering</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="experience">
+<div class="container">
+<h2 class="section-title">Education &amp; Experience</h2>
+<div class="timeline">
+<div class="timeline-item">
+<div class="time">2019 - 2023</div>
+<div>
+<h3>B.S., Northwestern Polytechnical University</h3>
+<p>Completed undergraduate study at Northwestern Polytechnical University, building a systematic foundation in engineering, programming, mathematics, and algorithmic problem solving.</p>
+</div>
+</div>
+<div class="timeline-item">
+<div class="time">2023 - 2026</div>
+<div>
+<h3>M.S., Northwestern Polytechnical University</h3>
+<p>Continued master's study at Northwestern Polytechnical University, with research and engineering interests gradually focusing on machine learning, multimodal AI, efficient model adaptation, and algorithm implementation.</p>
+<div class="nested-experience">
+<h4>Internship, Diantou Education</h4>
+<p>During my master's period, I interned at Diantou Education, where I worked on medical image segmentation tasks, including medical image data processing, segmentation model training, and algorithm validation. This work also resulted in a <strong>patent</strong>.</p>
+</div>
+</div>
+</div>
+<div class="timeline-item">
+<div class="time">Current</div>
+<div>
+<h3>Current Position, AVIC-Affiliated Subsidiary</h3>
+<p>Currently working in a subsidiary affiliated with the Aviation Industry Corporation of China, engaging with industry-side engineering practice and applied technology development.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="research">
+<div class="container">
+<h2 class="section-title">Research</h2>
+<div class="timeline">
+<div class="timeline-item">
+<div class="time">ICONIP 2026</div>
+<div>
+<h3>Multi-Granularity Knowledge Distillation via Subspace-aware Representation</h3>
+<p>Submitted to ICONIP 2026.</p>
+</div>
+</div>
+<div class="timeline-item">
+<div class="time">ICONIP 2026</div>
+<div>
+<h3>VEC-DPO: Visual Evidence-Calibrated Preference Optimization for Mitigating Hallucination in Multimodal Large Language Models</h3>
+<p>Submitted to ICONIP 2026.</p>
+</div>
+</div>
+<div class="timeline-item">
+<div class="time">ICONIP 2026</div>
+<div>
+<h3>LVLM Quantization and Efficient Deployment</h3>
+<p>Submitted to ICONIP 2026. Details will be updated later.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="projects">
+<div class="container">
+<h2 class="section-title">Selected Projects</h2>
+<p class="section-desc">These projects highlight my experience in model training, multimodal learning, and efficient AI systems.</p>
+<div class="grid">
+<article class="card">
+<h3>MGKD: Multi-Granularity Knowledge Distillation</h3>
+<p>A distillation framework integrating 3D attention alignment, adversarial masking, and spherical feature regularization. Evaluated on CIFAR-100, STL-10, and TinyImageNet.</p>
+<div class="tags">
+<span class="tag">PyTorch</span>
+<span class="tag">Knowledge Distillation</span>
+<span class="tag">Model Compression</span>
+</div>
+<p><a href="https://github.com/wwoww1/MGKD" target="_blank">View Code →</a></p>
+</article>
+<article class="card">
+<h3>Image-Text Retrieval System</h3>
+<p>Built a multimodal retrieval pipeline for aligning images and text in a shared embedding space. The project covers dataset processing, model training, evaluation, and retrieval visualization.</p>
+<div class="tags">
+<span class="tag">CLIP-style Learning</span>
+<span class="tag">Retrieval</span>
+<span class="tag">Multimodal</span>
+</div>
+<p><a href="#">Add Project Link →</a></p>
+</article>
+<article class="card">
+<h3>Nemotron LoRA Fine-Tuning</h3>
+<p>Fine-tuned a large language model with LoRA using curated Chain-of-Thought data, correctness filtering, and competition-oriented training pipelines.</p>
+<div class="tags">
+<span class="tag">LoRA</span>
+<span class="tag">SFT</span>
+<span class="tag">CoT Data</span>
+</div>
+<p><a href="#">Add Project Link →</a></p>
+</article>
+<article class="card">
+<h3>LLaVA Training Code Study</h3>
+<p>Studied the training pipeline of LLaVA-style vision-language models, including tokenizer setup, vision tower initialization, multimodal projector training, dataset construction, and trainer logic.</p>
+<div class="tags">
+<span class="tag">LLaVA</span>
+<span class="tag">VLM</span>
+<span class="tag">Training Pipeline</span>
+</div>
+<p><a href="#">Add Notes Link →</a></p>
+</article>
+</div>
+</div>
+</section>
+<section id="cv">
+<div class="container">
+<h2 class="section-title">CV</h2>
+<div class="card">
+<h3>Download My CV</h3>
+<p>A PDF version of my resume/CV is available here. Place your file as cv.pdf in the same folder as this webpage.</p>
+<a class="btn primary" href="./cv.pdf" target="_blank">Download CV</a>
+</div>
+</div>
+</section>
 
-        <aside class="profile-card">
-          <div class="avatar">李</div>
-          <p data-en="Prospective PhD applicant in multimodal AI and algorithm engineering." data-zh="多模态人工智能与算法工程方向的博士申请者。">Prospective PhD applicant in multimodal AI and algorithm engineering.</p>
-          <div class="profile-info">
-            <div>
-              <strong>Email</strong>
-              <span>yige.li43@gmail.com</span>
-            </div>
-            <div>
-              <strong>GitHub</strong>
-              <a href="https://github.com/wwoww1?tab=repositories" target="_blank">github.com/wwoww1</a>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </section>
+</main>
+<footer>
+<div class="container">© 2026 Yige Li. Last updated: May 2026.</div>
+</footer>
 
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title" data-en="About Me" data-zh="关于我">About Me</h2>
-        <p class="section-desc" data-en="I focus on machine learning systems that connect research ideas with deployable implementations. My current interests include multimodal representation learning, vision-language models, knowledge distillation, parameter-efficient fine-tuning, and reasoning data construction." data-zh="我关注能够连接研究想法与可部署实现的机器学习系统。目前的兴趣包括多模态表征学习、视觉语言模型、知识蒸馏、参数高效微调和推理数据构造。">
-          I focus on machine learning systems that connect research ideas with deployable implementations.
-          My current interests include multimodal representation learning, vision-language models, knowledge distillation,
-          parameter-efficient fine-tuning, and reasoning data construction.
-        </p>
-
-        <div class="grid">
-          <div class="card">
-            <h3 data-en="Research Interests" data-zh="研究兴趣">Research Interests</h3>
-            <p data-en="Multimodal learning, image-text retrieval, vision-language models, knowledge distillation, efficient fine-tuning, and model compression." data-zh="多模态学习、图文检索、视觉语言模型、知识蒸馏、高效微调与模型压缩。">Multimodal learning, image-text retrieval, vision-language models, knowledge distillation, efficient fine-tuning, and model compression.</p>
-            <div class="tags">
-              <span class="tag">Multimodal AI</span>
-              <span class="tag">VLM</span>
-              <span class="tag">KD</span>
-              <span class="tag">LoRA</span>
-            </div>
-          </div>
-          <div class="card">
-            <h3 data-en="Current Goal" data-zh="当前目标">Current Goal</h3>
-            <p data-en="Building a stronger research and engineering portfolio for PhD applications and algorithm engineering roles." data-zh="为博士申请和算法工程岗位构建更完整的研究与工程作品集。">Building a stronger research and engineering portfolio for PhD applications and algorithm engineering roles.</p>
-            <div class="tags">
-              <span class="tag">PhD Application</span>
-              <span class="tag">Research</span>
-              <span class="tag">Engineering</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience">
-      <div class="container">
-        <h2 class="section-title" data-en="Education & Experience" data-zh="教育与经历">Education & Experience</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="time" data-en="2019 - 2023" data-zh="2019 - 2023">2019 - 2023</div>
-            <div>
-              <h3 data-en="B.S., Northwestern Polytechnical University" data-zh="本科，西北工业大学">B.S., Northwestern Polytechnical University</h3>
-              <p data-en="Completed undergraduate study at Northwestern Polytechnical University, building a systematic foundation in engineering, programming, mathematics, and algorithmic problem solving." data-zh="于西北工业大学完成本科阶段学习，系统建立工程基础、程序设计、数学基础与算法问题求解能力。">
-                Completed undergraduate study at Northwestern Polytechnical University, building a systematic foundation in engineering, programming, mathematics, and algorithmic problem solving.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="time" data-en="2023 - 2026" data-zh="2023 - 2026">2023 - 2026</div>
-            <div>
-              <h3 data-en="M.S., Northwestern Polytechnical University" data-zh="硕士，西北工业大学">M.S., Northwestern Polytechnical University</h3>
-              <p data-en="Continued master's study at Northwestern Polytechnical University, with research and engineering interests gradually focusing on machine learning, multimodal AI, efficient model adaptation, and algorithm implementation." data-zh="继续在西北工业大学攻读硕士学位，研究与工程兴趣逐步聚焦于机器学习、多模态人工智能、高效模型适配与算法实现。">
-                Continued master's study at Northwestern Polytechnical University, with research and engineering interests gradually focusing on machine learning, multimodal AI, efficient model adaptation, and algorithm implementation.
-              </p>
-              <div class="nested-experience">
-                <h4 data-en="Internship, Diantou Education" data-zh="点头教育实习经历">Internship, Diantou Education</h4>
-                <p data-en="During my master's period, I interned at Diantou Education, where I worked on medical image segmentation tasks, including medical image data processing, segmentation model training, and algorithm validation. This work also resulted in a <strong>patent</strong>." data-zh="硕士期间曾在点头教育实习，主要参与医疗影像分割相关工作，包括医学图像数据处理、分割模型训练与算法验证；该工作产出一项<strong>专利</strong>。">
-                  During my master's period, I interned at Diantou Education, where I worked on medical image segmentation tasks, including medical image data processing, segmentation model training, and algorithm validation. This work also resulted in a <strong>patent</strong>.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="time" data-en="Current" data-zh="目前">Current</div>
-            <div>
-              <h3 data-en="Current Position, AVIC-Affiliated Subsidiary" data-zh="现就职于中国航空工业集团旗下某子公司">Current Position, AVIC-Affiliated Subsidiary</h3>
-              <p data-en="Currently working in a subsidiary affiliated with the Aviation Industry Corporation of China, engaging with industry-side engineering practice and applied technology development." data-zh="目前就职于中国航空工业集团旗下某子公司，参与面向产业场景的工程实践与应用技术工作。">
-                Currently working in a subsidiary affiliated with the Aviation Industry Corporation of China, engaging with industry-side engineering practice and applied technology development.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="research">
-      <div class="container">
-        <h2 class="section-title" data-en="Research" data-zh="研究成果">Research</h2>
-
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="time" data-en="ICONIP 2026" data-zh="ICONIP 2026">ICONIP 2026</div>
-            <div>
-              <h3 data-en="Multi-Granularity Knowledge Distillation via Subspace-aware Representation" data-zh="Multi-Granularity Knowledge Distillation via Subspace-aware Representation">Multi-Granularity Knowledge Distillation via Subspace-aware Representation</h3>
-              <p data-en="Accepted by ICONIP 2026." data-zh="录用于 ICONIP 2026。">Accepted by ICONIP 2026.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="time" data-en="ICONIP 2026" data-zh="ICONIP 2026">ICONIP 2026</div>
-            <div>
-              <h3 data-en="VEC-DPO: Visual Evidence-Calibrated Preference Optimization for Mitigating Hallucination in Multimodal Large Language Models" data-zh="VEC-DPO: Visual Evidence-Calibrated Preference Optimization for Mitigating Hallucination in Multimodal Large Language Models">VEC-DPO: Visual Evidence-Calibrated Preference Optimization for Mitigating Hallucination in Multimodal Large Language Models</h3>
-              <p data-en="Accepted by ICONIP 2026." data-zh="录用于 ICONIP 2026。">Accepted by ICONIP 2026.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="container">
-        <h2 class="section-title" data-en="Selected Projects" data-zh="代表项目">Selected Projects</h2>
-        <p class="section-desc" data-en="These projects highlight my experience in model training, multimodal learning, and efficient AI systems." data-zh="这些项目展示了我在模型训练、多模态学习和高效人工智能系统方面的经验。">These projects highlight my experience in model training, multimodal learning, and efficient AI systems.</p>
-
-        <div class="grid">
-          <article class="card">
-            <h3>MGKD: Multi-Granularity Knowledge Distillation</h3>
-            <p data-en="A distillation framework integrating 3D attention alignment, adversarial masking, and spherical feature regularization. Evaluated on CIFAR-100, STL-10, and TinyImageNet." data-zh="一种融合 3D 注意力对齐、对抗掩码和球面特征正则化的知识蒸馏框架，并在 CIFAR-100、STL-10 和 TinyImageNet 上进行评估。">
-              A distillation framework integrating 3D attention alignment, adversarial masking, and spherical feature regularization.
-              Evaluated on CIFAR-100, STL-10, and TinyImageNet.
-            </p>
-            <div class="tags">
-              <span class="tag">PyTorch</span>
-              <span class="tag">Knowledge Distillation</span>
-              <span class="tag">Model Compression</span>
-            </div>
-            <p><a href="https://github.com/wwoww1/MGKD" target="_blank" data-en="View Code →" data-zh="查看代码 →">View Code →</a></p>
-          </article>
-
-          <article class="card">
-            <h3 data-en="Image-Text Retrieval System" data-zh="图文检索系统">Image-Text Retrieval System</h3>
-            <p data-en="Built a multimodal retrieval pipeline for aligning images and text in a shared embedding space. The project covers dataset processing, model training, evaluation, and retrieval visualization." data-zh="构建图文共享嵌入空间的多模态检索流程，覆盖数据处理、模型训练、评估与检索可视化。">
-              Built a multimodal retrieval pipeline for aligning images and text in a shared embedding space.
-              The project covers dataset processing, model training, evaluation, and retrieval visualization.
-            </p>
-            <div class="tags">
-              <span class="tag">CLIP-style Learning</span>
-              <span class="tag">Retrieval</span>
-              <span class="tag">Multimodal</span>
-            </div>
-            <p><a href="#" data-en="Add Project Link →" data-zh="添加项目链接 →">Add Project Link →</a></p>
-          </article>
-
-          <article class="card">
-            <h3 data-en="Nemotron LoRA Fine-Tuning" data-zh="Nemotron LoRA 微调">Nemotron LoRA Fine-Tuning</h3>
-            <p data-en="Fine-tuned a large language model with LoRA using curated Chain-of-Thought data, correctness filtering, and competition-oriented training pipelines." data-zh="使用经过筛选的思维链数据、正确性过滤和竞赛导向训练流程，对大语言模型进行 LoRA 微调。">
-              Fine-tuned a large language model with LoRA using curated Chain-of-Thought data, correctness filtering,
-              and competition-oriented training pipelines.
-            </p>
-            <div class="tags">
-              <span class="tag">LoRA</span>
-              <span class="tag">SFT</span>
-              <span class="tag">CoT Data</span>
-            </div>
-            <p><a href="#" data-en="Add Project Link →" data-zh="添加项目链接 →">Add Project Link →</a></p>
-          </article>
-
-          <article class="card">
-            <h3 data-en="LLaVA Training Code Study" data-zh="LLaVA 训练代码学习">LLaVA Training Code Study</h3>
-            <p data-en="Studied the training pipeline of LLaVA-style vision-language models, including tokenizer setup, vision tower initialization, multimodal projector training, dataset construction, and trainer logic." data-zh="学习 LLaVA 风格视觉语言模型的训练流程，包括 tokenizer 设置、vision tower 初始化、多模态 projector 训练、数据集构造和 trainer 逻辑。">
-              Studied the training pipeline of LLaVA-style vision-language models, including tokenizer setup,
-              vision tower initialization, multimodal projector training, dataset construction, and trainer logic.
-            </p>
-            <div class="tags">
-              <span class="tag">LLaVA</span>
-              <span class="tag">VLM</span>
-              <span class="tag">Training Pipeline</span>
-            </div>
-            <p><a href="#" data-en="Add Notes Link →" data-zh="添加笔记链接 →">Add Notes Link →</a></p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="cv">
-      <div class="container">
-        <h2 class="section-title" data-en="CV" data-zh="简历">CV</h2>
-        <div class="card">
-          <h3 data-en="Download My CV" data-zh="下载我的简历">Download My CV</h3>
-          <p data-en="A PDF version of my resume/CV is available here. Place your file as cv.pdf in the same folder as this webpage." data-zh="这里提供我的 PDF 版简历。请将简历文件命名为 cv.pdf，并和网页文件放在同一文件夹下。">
-            A PDF version of my resume/CV is available here. Place your file as <strong>cv.pdf</strong> in the same folder as this webpage.
-          </p>
-          <a class="btn primary" href="./cv.pdf" target="_blank" data-en="Download CV" data-zh="下载简历">Download CV</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <div class="contact-box">
-          <div>
-            <h2 class="section-title" style="margin-bottom: 0;" data-en="Contact" data-zh="联系方式">Contact</h2>
-            <p data-en="I am open to research collaboration, PhD opportunities, and algorithm engineering discussions related to multimodal AI and efficient model training." data-zh="欢迎围绕多模态人工智能和高效模型训练开展研究合作、博士机会交流和算法工程讨论。">
-              I am open to research collaboration, PhD opportunities, and algorithm engineering discussions related to multimodal AI and efficient model training.
-            </p>
-          </div>
-          <div class="contact-links">
-            <span>yige.li43@gmail.com</span>
-            <a href="https://github.com/wwoww1?tab=repositories" target="_blank">GitHub</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container" data-en="© 2026 李奕阁. Last updated: May 2026." data-zh="© 2026 李奕阁. 最后更新：2026 年 5 月。">
-      © 2026 李奕阁. Last updated: May 2026.
-    </div>
-  </footer>
-
-  <script>
-    let currentLanguage = "en";
-
-    function applyLanguage(language) {
-      document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
-
-      document.querySelectorAll("[data-en][data-zh]").forEach((element) => {
-        element.innerHTML = element.dataset[language];
-      });
-
-      const langToggle = document.getElementById("langToggle");
-      langToggle.textContent = language === "en" ? "中文" : "English";
-      currentLanguage = language;
-      localStorage.setItem("language", language);
-    }
-
-    function toggleLanguage() {
-      applyLanguage(currentLanguage === "en" ? "zh" : "en");
-    }
-
-    const savedLanguage = localStorage.getItem("language") || "en";
-    applyLanguage(savedLanguage);
-  </script>
 </body>
 </html>

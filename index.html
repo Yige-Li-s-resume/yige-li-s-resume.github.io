@@ -407,6 +407,78 @@
       font-size: 15px;
     }
 
+    .research-body {
+      display: grid;
+      grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+      gap: 26px;
+      align-items: center;
+    }
+
+    .research-figure {
+      display: block;
+      aspect-ratio: 3 / 2;
+      padding: 10px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #ffffff;
+      cursor: zoom-in;
+    }
+
+    .research-figure:hover {
+      border-color: #c7d2fe;
+      text-decoration: none;
+    }
+
+    .research-figure img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+      transition: transform 0.25s ease;
+    }
+
+    .research-figure:hover img {
+      transform: scale(1.02);
+    }
+
+    .research-copy h3 {
+      margin-bottom: 8px;
+    }
+
+    .research-copy p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .research-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .research-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .research-link:hover {
+      color: var(--primary-dark);
+      text-decoration: none;
+    }
+
+    .figure-hint {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+    }
+
     .contact-box {
       background: #0f172a;
       color: white;
@@ -476,6 +548,11 @@
       .timeline-item {
         grid-template-columns: 1fr;
         gap: 8px;
+      }
+
+      .research-body {
+        grid-template-columns: 1fr;
+        gap: 18px;
       }
     }
   </style>
@@ -590,23 +667,56 @@
 <div class="timeline">
 <div class="timeline-item">
 <div class="time">ICONIP 2026</div>
+<div class="research-body">
 <div>
+<a class="research-figure" href="./MGKD.png" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size MGKD method overview">
+<img src="./MGKD.png" alt="Overview of the multi-granularity knowledge distillation framework" loading="lazy" decoding="async"/>
+</a>
+<span class="figure-hint">Click to view the full figure</span>
+</div>
+<div class="research-copy">
 <h3>Multi-Granularity Knowledge Distillation via Subspace-aware Representation</h3>
 <p>Submitted to ICONIP 2026.</p>
+<div class="research-links">
+<a class="research-link" href="https://github.com/wwoww1/MGKD" target="_blank" rel="noopener noreferrer" aria-label="View the MGKD code repository on GitHub">View code on GitHub <span aria-hidden="true">↗</span></a>
+</div>
+</div>
 </div>
 </div>
 <div class="timeline-item">
 <div class="time">ICONIP 2026</div>
+<div class="research-body">
 <div>
+<a class="research-figure" href="./VEC-DPO.png" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size VEC-DPO framework overview">
+<img src="./VEC-DPO.png" alt="Overview of the VEC-DPO visual evidence calibration and preference optimization pipeline" loading="lazy" decoding="async"/>
+</a>
+<span class="figure-hint">Click to view the full figure</span>
+</div>
+<div class="research-copy">
 <h3>VEC-DPO: Visual Evidence-Calibrated Preference Optimization for Mitigating Hallucination in Multimodal Large Language Models</h3>
 <p>Submitted to ICONIP 2026.</p>
+<div class="research-links">
+<a class="research-link" href="https://github.com/wwoww1/VEC-DPO" target="_blank" rel="noopener noreferrer" aria-label="View the VEC-DPO code repository on GitHub">View code on GitHub <span aria-hidden="true">↗</span></a>
+</div>
+</div>
 </div>
 </div>
 <div class="timeline-item">
 <div class="time">AAAI 2027</div>
+<div class="research-body">
 <div>
+<a class="research-figure" href="./VTPQ.png" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size VTPQ quantization overview">
+<img src="./VTPQ.png" alt="Illustration of the VTPQ video token preservation and quantization approach" loading="lazy" decoding="async"/>
+</a>
+<span class="figure-hint">Click to view the full figure</span>
+</div>
+<div class="research-copy">
 <h3>LVLM Quantization and Efficient Deployment</h3>
 <p>Prepare to submit to AAAI 2027. Details will be updated later.</p>
+<div class="research-links">
+<a class="research-link" href="https://github.com/wwoww1/new_paper" target="_blank" rel="noopener noreferrer" aria-label="View the VTPQ code repository on GitHub">View code on GitHub <span aria-hidden="true">↗</span></a>
+</div>
+</div>
 </div>
 </div>
 </div>

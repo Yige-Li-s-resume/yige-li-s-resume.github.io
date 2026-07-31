@@ -306,12 +306,19 @@
 
 
 
-    #projects .grid {
+    #internship .grid {
       grid-template-columns: 1fr;
     }
 
-    #projects .card {
+    #internship .card {
       padding: 28px 30px;
+    }
+
+    .internship-meta {
+      margin-bottom: 8px;
+      color: var(--primary);
+      font-size: 14px;
+      font-weight: 800;
     }
 
     .card {
@@ -567,7 +574,7 @@
 <a href="#about">About</a>
 <a href="#experience">Experience</a>
 <a href="#research">Research</a>
-<a href="#projects">Projects</a>
+<a href="#internship">Internship</a>
 <a href="#cv">CV</a>
 <a href="#contact">Contact</a>
 </div>
@@ -589,7 +596,7 @@
 <div><span class="contact-label">LinkedIn</span><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></div>
 </div>
 <div class="button-row">
-<a class="btn primary" href="#projects">View Projects</a>
+<a class="btn primary" href="#internship">View Internship</a>
 <a class="btn" href="#research">View Research</a>
 <a class="btn" href="./cv.pdf" target="_blank">Download CV</a>
 </div>
@@ -722,20 +729,22 @@
 </div>
 </div>
 </section>
-<section id="projects">
+<section id="internship">
 <div class="container">
-<h2 class="section-title">Selected Projects</h2>
-<p class="section-desc">These projects highlight my experience in model training, multimodal learning, and efficient AI systems.</p>
+<h2 class="section-title">Internship Project</h2>
+<p class="section-desc">Applied research experience in medical image analysis at Diantou Education Technology Co., Ltd.</p>
 <div class="grid">
 <article class="card">
-<h3>Image-Text Retrieval System</h3>
-<p>Built a multimodal retrieval pipeline for aligning images and text in a shared embedding space. The project covers dataset processing, model training, evaluation, and retrieval visualization.</p>
-<p><a href="https://github.com/wwoww1/E-commerce-Multimodal-Image-Text-Retrieval">Code link</a></p>
-</article>
-<article class="card">
-<h3>Cross-Platform Multimodal Large Language Model Quantization and Deployment</h3>
-<p>A placeholder project for building a unified deployment pipeline for quantized multimodal large language models across desktop and mobile environments. Planned components include model quantization, inference acceleration, local deployment, and extensible model integration.</p>
-<p><a href="https://github.com/wwoww1/Cross-Platform-Multimodal-Large-Language-Model-Quantization-and-Deployment">Code link</a></p>
+<div class="internship-meta">Research Intern · Jul. 2024 - Oct. 2024</div>
+<h3>3D Cardiac Image Segmentation and Registration</h3>
+<p>Developed and evaluated deep-learning pipelines for 3D cardiac image segmentation and registration, covering medical image processing, model training, and algorithm validation.</p>
+<p><strong>Outcome:</strong> The project resulted in the Chinese patent <em>A Method, System, and Computing Device for Medical Image Registration and Segmentation</em>.</p>
+<div class="tags">
+<span class="tag">Medical Imaging</span>
+<span class="tag">3D Segmentation</span>
+<span class="tag">Image Registration</span>
+<span class="tag">Deep Learning</span>
+</div>
 </article>
 </div>
 </div>
